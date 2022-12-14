@@ -1,0 +1,38 @@
+{
+	"liveServer.settings.multiRootWorkspaceName": "Theme Development",
+	"editor.suggestSelection": "first",
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	"git.ignoreMissingGitWarning": true,
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "compressed",
+			"extensionName": ".min.css",
+			"savePath": "/assets/css"
+		}
+	],
+	"liveSassCompile.settings.autoprefix": [
+		"defaults",
+		"IE 10"
+	],
+	"liveSassCompile.settings.excludeList": [
+		"**/bootstrap/**", 
+		"**/node_modules/**",
+		".vscode/**"
+	],
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"editor.codeActionsOnSave": {"source.fixAll": false},
+	"editor.formatOnSave": true,
+	"prettier.useTabs": true,
+	"prettier.singleQuote": true,
+	"editor.tabSize": 2,
+	"html.format.indentInnerHtml": true,
+	"editor.wordWrap": "on",
+}
