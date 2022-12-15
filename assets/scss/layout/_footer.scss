@@ -18,19 +18,17 @@
     display: flex;
     justify-content: space-between;
     .footer-paragraph {
-      font-size: 14px;
+      @include font-accent(#C5D5DF);
       line-height: 130%;
-      color: #C5D5DF;
       width: 30%;
     }
       .bold {
       font-size: 16px;
-      color: $white;
+      line-height: 15px;
       margin-bottom: 16px;
       }
       .light {
-        font-size: 14px;
-        color: #C5D5DF;
+        @include font-accent(#C5D5DF);
         margin-bottom: 18px;
       }
       .mb-0 {

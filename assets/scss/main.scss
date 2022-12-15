@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 // 1. Configuration and helpers
-@import 'helpers/variables', 'helpers/mixins', 'helpers/responsive';
+@import 'helpers/variables', 'helpers/mixins', 'helpers/responsive', 'helpers/margins', 'helpers/widths';
 
 // 3. Base stuff
 @import 'base/base', 'base/button', 'base/typography';
