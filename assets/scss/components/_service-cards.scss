@@ -1,0 +1,52 @@
+/* SECTION 8 CARDS */
+
+.service-card {
+  border: 1px solid #E7E7E7;
+  border-radius: 9px;
+  padding: 30px;
+  .card-heading {
+    margin-bottom: 32px;
+    font-size: 18px;
+    line-height: 17px;
+  }
+
+  .flex-taglines {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 32px;
+    .card-taglines {
+      display: flex;
+      gap: 19.5px;
+
+      .pri-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14px;
+        height: 14px;
+        background: $primary-color;
+        border-radius: 50%;
+      }
+
+      .features-paragraph {
+        font-size: 16px;
+        color: $secondary-color;
+      }
+    }
+  }
+
+  .btn-underline {
+    .btn-underline {
+      width: 52.5px;
+      height: 2px;
+      justify-content: center;
+      background-color: $primary-color;
+    }
+  }
+}
+
+.service-card:hover {
+  -webkit-box-shadow: 5px 5px 17px 0px rgba(153,153,153,0.6); 
+  box-shadow: 5px 5px 17px 0px rgba(153,153,153,0.6);
+}

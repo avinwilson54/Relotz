@@ -1,0 +1,27 @@
+/* SECTION 4 CARDS */
+
+.property-info-card {
+  background: #FFFFFF;
+  border: 1px solid #E7E7E7;
+  border-radius: 9px;
+  padding-top: 32px;
+  padding-left: 32px;
+  padding-bottom: 26px;
+
+  .box-icon {
+    margin-bottom: 48px;
+  }
+
+  .box-heading {
+    @include font-accent(#181818);
+    font-size: 18px;
+    line-height: 17px;
+    margin-bottom: 16px;
+  }
+
+  .txt-secondary {
+    font-size: 14px;
+    line-height: 140%;
+    width: 90%;
+  }
+}

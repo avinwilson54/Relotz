@@ -42,6 +42,10 @@
           align-items: flex-start;
           gap: 20px;
 
+          p.light {
+            line-height: 130%;
+          }
+
           .f-tag-1 {
             color: $white;
             width: 15px;

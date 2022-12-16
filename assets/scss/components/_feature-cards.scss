@@ -1,0 +1,87 @@
+/* SECTION 4 CARDS*/
+
+.feature-card.property {
+  background: #FFFFFF;
+
+  .place {
+    font-size: 16px;
+    line-height: 15px;
+    margin-bottom: 8px;
+  }
+
+  .property__detail {
+    margin-top: 25px;
+    margin-left: 32px;
+
+    .property__specs {
+      margin-bottom: 36px;
+    .txt-blue {
+      @include font-accent(#365C8D);
+    }
+    .txt-gray {
+      @include font-accent(#8E8E8E)
+    }
+  }
+    .location {
+      display: flex;
+      gap: 7px;
+      margin-bottom: 28px;
+      .location-icon {
+        align-self: flex-start;
+        padding-top: 4px;
+      }
+    }
+
+    .txt-secondary {
+      font-size: 14px;
+      width: 60%;
+    }
+
+    .price.txt-secondary-bolder {
+      font-size: 24px;
+      margin-bottom: 29px;
+    }
+    
+    .rule {
+      border-bottom: 2px solid #EBEBEB;
+      margin-bottom: 16px;
+      // width: 249.5px;
+    }
+
+    .posted {
+      display: flex;
+      align-items: center;
+      font-size: 10px;
+      color: #273138;
+      margin-bottom: 16px;
+      .gray {
+        @include font-style(#8E8E8E, 400);
+      }
+
+      .bold-underline {
+        @include font-style($secondary-color, 600);
+        text-decoration: underline;
+        margin-left: 2px;
+      }
+
+      .inline-check {
+        background-color: $primary-color;
+        margin-left: 7px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        padding: 1.5px;
+      }
+
+      .bold {
+        @include font-style(#8E8E8E, 600);
+        margin-left: 2px;
+      }
+      
+    }
+  }
+}
+
+.feature-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,0 +1,25 @@
+/* SECTION 6 CARDS */
+
+.buyers-info-card {
+
+  .card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: $primary-color;
+  }
+
+  .txt-secondary {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .card-paragraph {
+    font-size: 14px;
+    line-height: 140%;
+  }
+}

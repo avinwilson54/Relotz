@@ -1,0 +1,83 @@
+/* SECTION 7 CARDS */
+// color1: white, color2: secondary-color, color3: primary-color
+
+@mixin card-accent($color1, $color2, $color3) {
+  background: $color1;
+  border: 1px solid #E7E7E7;
+  padding: 30px;
+
+  .cost {
+
+    .price {
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 31px;
+      margin-bottom: 32px;
+      color: $color2;
+    }
+
+    .cost-per-month {
+      margin-bottom: 24px;
+      strong {
+        font-size: 32px;
+        color: $color2;
+        font-weight: 700;
+      }
+    }
+    .cost-per-year {
+      margin-bottom: 24px;
+      strong {
+        font-size: 32px;
+        color: $color2;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .features {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 29px;
+
+    .flex-features {
+      display: flex;
+      gap: 16px;
+
+      .pri-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 14px;
+        height: 14px;
+        background: $color3;
+        border-radius: 50%;
+      }
+
+      .features-paragraph {
+        color: $color2;
+        font-size: 14px;
+        width: 80%;
+      }
+    }
+  }
+}
+
+.package-card {
+  @include card-accent($white, $secondary-color, $primary-color);
+}
+
+// color1: $secondary-color, color2: $white, color3: primary-color
+
+.package-card-dark {
+  @include card-accent($secondary-color, $white, $primary-color );
+  backdrop-filter: blur(35px);
+}
+
+.package-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.package-card-dark:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,0 +1,24 @@
+/* SECTION 2 */
+
+.box {
+  border: 1.5px solid #E7E7E7;
+  border-radius: 9px;
+  .box-items {
+    margin: 32px ;
+    gap: 16px;
+
+    .badge {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      background: $primary-color;
+      border-radius: 8px;    
+    }
+
+    .txt-secondary {
+      font-size: 18px;
+    }
+  }
+}

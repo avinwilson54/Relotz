@@ -10,7 +10,7 @@
 // @import 'layout/header';
 
 // 5. Components
-@import 'components/common';
+@import 'components/common', 'components/box', 'components/feature-cards', 'components/property-info-cards', 'components/buyers-info-cards', 'components/package-cards', 'components/service-cards', 'components/accordion';
 
 // 6. Pages specific
 @import 'pages/home';
