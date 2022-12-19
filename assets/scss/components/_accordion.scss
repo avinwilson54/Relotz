@@ -28,7 +28,7 @@
         overflow: hidden;
         transition: 0.5s;
         font-size: 14px;
-        line-height: 1.5;
+        line-height: 28px;
       }
     }
 
@@ -37,7 +37,7 @@
     }
 
     .accordion-container.active .content {
-      height: 3.5em;
+      height: 6rem;
     }
 
     .accordion-container.active .label.txt-secondary-bolder {

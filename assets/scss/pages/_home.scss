@@ -15,7 +15,7 @@ body {
 
 .background-image {
   background-image: linear-gradient(90deg, #0B151D 0%, rgba(11, 21, 29, 0) 91.77%), url("/assets/images/landing-bg.png");
-  // background-image: url("/assets/images/Landing-bg-img.png");
+  background-attachment: fixed;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   background-size: cover;
   background-position: center;
@@ -297,6 +297,7 @@ margin-right: 8px;
       .packages-paragraph {
         line-height: 170%;
         margin-bottom: 32px;
+        width: 38%;
       }
 
       .toggle-switch {
@@ -307,6 +308,7 @@ margin-right: 8px;
 
         .monthly, .annualy {
           font-size: 12px;
+          font-weight: 700;
           color: $secondary-color;
         }
       }
@@ -398,6 +400,7 @@ input:checked + .slider:before {
     margin-bottom: 32px;
     .service-paragraph {
       @include fonts(16px, #666666, 400);
+      width: 40%;
     }
 
     .btn-underline {
@@ -430,6 +433,10 @@ input:checked + .slider:before {
     grid-template-rows: auto;
 
     .container-content {
+
+      .content-heading {
+        width: 80%;
+      }
   
       .container-sentence {
         display: flex;
@@ -514,4 +521,12 @@ input:checked + .slider:before {
     line-height: 190%;
     width: 80%;
   }
+}
+
+.opacaity-light {
+  opacity: 0.4;
+}
+
+.no-opacity {
+  opacity: 1;
 }
