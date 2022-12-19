@@ -175,7 +175,6 @@ margin-right: 8px;
   }
 
   .property-description-2 {
-    // background: url("/assets/images/people.png");
     
     .property-box {
       margin: 64px 112px 0;
@@ -195,32 +194,6 @@ margin-right: 8px;
         top: 48px;
         left: 472px;
         z-index: 1;
-
-        // .property-info-card {
-        //   background: #FFFFFF;
-        //   border: 1px solid #E7E7E7;
-        //   border-radius: 9px;
-        //   padding-top: 32px;
-        //   padding-left: 32px;
-        //   padding-bottom: 26px;
-
-        //   .box-icon {
-        //     margin-bottom: 48px;
-        //   }
-
-        //   .box-heading {
-        //     @include font-accent(#181818);
-        //     font-size: 18px;
-        //     line-height: 17px;
-        //     margin-bottom: 16px;
-        //   }
-
-        //   .txt-secondary {
-        //     font-size: 14px;
-        //     line-height: 140%;
-        //     width: 90%;
-        //   }
-        // }
       }
     }
   }
@@ -231,7 +204,6 @@ margin-right: 8px;
     background-size: cover;
     background-position: center;
     margin: 192px 112px 0;
-    // margin-top: 192px;
 
     .container-info {
       padding: 56px;
