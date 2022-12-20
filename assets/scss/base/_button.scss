@@ -21,15 +21,18 @@
 }
 
 .primary-btn {
+	display: inline-block;
 	font-weight: 700;
   font-size: 16px;
   color: $white;
   background: $primary-color;
   border: none;
   padding: 16px 32px;
-  a {
-    text-decoration: none;
-  }
+	text-decoration: none;
+}
+
+.primary-btn:hover {
+	background-color: #077a82;
 }
 
 .primary-link {
@@ -43,6 +46,11 @@
 		border-bottom: 2px solid #02B1BE;
 		text-decoration: none;
 	}
+
+	a:hover {
+		color: #077a82;
+		border-bottom: 2px solid #077a82;
+	}
 }
 
 .secondary-btn {
@@ -51,8 +59,10 @@
     font-weight: 700;
     background: none;
     color: $secondary-color;
-	a {
 		text-decoration: none;
-		color: $secondary-color;
-	}
+}
+
+.secondary-btn:hover {
+	color: $secondary-color;
+	background-color: $primary-color;
 }

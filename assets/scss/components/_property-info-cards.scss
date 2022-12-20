@@ -6,6 +6,7 @@
   border-radius: 9px;
   padding-top: 32px;
   padding-left: 32px;
+  transition: box-shadow .4s ease;
   padding-bottom: 26px;
 
   .box-icon {
@@ -24,4 +25,8 @@
     line-height: 140%;
     width: 90%;
   }
+}
+
+.property-info-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

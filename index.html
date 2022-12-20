@@ -2,7 +2,7 @@
 <html lang="en">
 
   <head>
-    <title>Page Title</title>
+    <title>RELOTZ Website</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta name="theme-color" content="#ffffff">
@@ -13,6 +13,12 @@
     <meta name="author" content="Project name">
     <meta name="description" content="Project name">
     <meta name="keywords" content="Project name">
+
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <!-- meta data preview image -->
     <!-- <meta property="og:image" content="assets/images/metadata-preview.jpg">
@@ -33,7 +39,7 @@
     <!-- CSS only -->
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css"
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="./assets/css/main.min.css">
     <!-- JavaScript Bundle with Popper -->
 
     <script src="https://kit.fontawesome.com/7a83d58e46.js" crossorigin="anonymous"></script>
@@ -57,7 +63,7 @@
           <img class="flag" src="./assets/images/flag.png" alt="usa-flag"><a href="#">En<i
               class="fa fa-solid fa-chevron-down"></i></a>
         </button>
-        <button type="button" class="login-btn primary-btn"><a href="#">Login</a></button>
+        <a href="#" type="button" class="login-btn primary-btn">Login</a>
       </div>
 
       <div class="header-content">
@@ -69,7 +75,7 @@
     </header>
     <!-- header -->
 
-    <main id="main">
+    <main class="main">
 
       <section class="page-1">
         <div class="page1-context">
@@ -115,122 +121,127 @@
         </div>
       </section>
 
-      <section id="features">
+      <section class="features">
 
-        <div class="heading-group">
-          <h2 class="heading-dark lh-56 mb-32">Featured properties</h2>
-          <button class="secondary-btn" type="button"><a href="#">See all</a></button>
+        <div class="features-container">
+
+          <div class="heading-group">
+            <h2 class="heading-dark lh-56 mb-32">Featured properties</h2>
+            <a href="#" type="button" class="secondary-btn">See all</a>
+          </div>
+
+          <div class="cards-grid">
+
+            <div class="feature-card property">
+              <div class="flex">
+                <img class="card-img1" src="./assets/images/card-img1.png" alt="property-image">
+                <div class="property__detail">
+                  <p class="place txt-secondary-bolder">South plaza</p>
+                  <p class="property__specs">
+                    <span class="txt-blue">Land</span>
+                    <span class="txt-gray"> &#x2022; 1460.00 acres</span>
+                  </p>
+                  <div class="location">
+                    <img class="location-icon" src="./assets/images/location.svg" alt="location-icon">
+                    <p class="txt-secondary">1582 Wellborn
+                      Rd
+                      Lithonia - 30058, GA</p>
+                  </div>
+                  <p class="price txt-secondary-bolder">$10,000</p>
+                  <div class="rule"></div>
+                  <p class="posted">
+                    <span class="gray">Posted by</span>
+                    <span class="bold-underline">John wick</span>
+                    <img class="inline-check" src="./assets/images/check-img.svg" alt="check-logo">
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-card property">
+              <div class="flex">
+                <img class="card-img1" src="./assets/images/card-img2.png" alt="property-image">
+                <div class="property__detail">
+                  <p class="place txt-secondary-bolder">Gateway plaza</p>
+                  <p class="property__specs">
+                    <span class="txt-blue">Retail</span>
+                    <span class="txt-gray">&#x2022; 2000 sq ft</span>
+                  </p>
+                  <div class="location">
+                    <img class="location-icon" src="./assets/images/location.svg" alt="location-icon">
+                    <p class="txt-secondary">1582 Wellborn
+                      Rd
+                      Lithonia - 30058, GA</p>
+                  </div>
+                  <p class="price txt-secondary-bolder">$10,000</p>
+                  <div class="rule"></div>
+                  <p class="posted">
+                    <span class="gray">Posted by</span>
+                    <span class="bold-underline">John wick</span>
+                    <img class="inline-check" src="./assets/images/check-img.svg" alt="check-logo">
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-card property">
+              <div class="flex">
+                <img class="card-img1" src="./assets/images/card-img3.png" alt="property-image">
+                <div class="property__detail">
+                  <p class="place txt-secondary-bolder">Rose avenue</p>
+                  <p class="property__specs">
+                    <span class="txt-blue">Mixed use</span>
+                    <span class="txt-gray">&#x2022; 1060 sq ft</span>
+                  </p>
+                  <div class="location">
+                    <img class="location-icon" src="./assets/images/location.svg" alt="location-icon">
+                    <p class="txt-secondary">1582 Wellborn
+                      Rd
+                      Lithonia - 30058, GA</p>
+                  </div>
+                  <p class="price txt-secondary-bolder">$10,000</p>
+                  <div class="rule"></div>
+                  <p class="posted">
+                    <span class="gray">Posted by</span>
+                    <span class="bold">X Builder</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="feature-card property">
+              <div class="flex">
+                <img class="card-img1" src="./assets/images/card-img4.png" alt="property-image">
+                <div class="property__detail">
+                  <p class="place txt-secondary-bolder">Europe hall</p>
+                  <p class="property__specs">
+                    <span class="txt-blue">Industrial</span>
+                    <span class="txt-gray">&#x2022; 19200 sq ft</span>
+                  </p>
+                  <div class="location">
+                    <img class="location-icon" src="./assets/images/location.svg" alt="location-icon">
+                    <p class="txt-secondary">1582 Wellborn
+                      Rd
+                      Lithonia - 30058, GA</p>
+                  </div>
+                  <p class="price txt-secondary-bolder">$10,000</p>
+                  <div class="rule"></div>
+                  <p class="posted">
+                    <span class="gray">Posted by</span>
+                    <span class="bold-underline">John wick</span>
+                    <img class="inline-check" src="./assets/images/check-img.svg" alt="check-logo">
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
 
-        <div class="cards-grid">
-
-          <div class="feature-card property">
-            <div class="flex">
-              <img class="card-img1" src="./assets/images/card-img1.png" alt="property-image">
-              <div class="property__detail">
-                <p class="place txt-secondary-bolder">South plaza</p>
-                <p class="property__specs">
-                  <span class="txt-blue">Land</span>
-                  <span class="txt-gray"> &#x2022; 1460.00 acres</span>
-                </p>
-                <div class="location">
-                  <img class="location-icon" src="./assets/images/location.svg" alt="location-icon">
-                  <p class="txt-secondary">1582 Wellborn
-                    Rd
-                    Lithonia - 30058, GA</p>
-                </div>
-                <p class="price txt-secondary-bolder">$10,000</p>
-                <div class="rule"></div>
-                <p class="posted">
-                  <span class="gray">Posted by</span>
-                  <span class="bold-underline">John wick</span>
-                  <img class="inline-check" src="./assets/images/check-img.svg" alt="check-logo">
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-card property">
-            <div class="flex">
-              <img class="card-img1" src="./assets/images/card-img2.png" alt="property-image">
-              <div class="property__detail">
-                <p class="place txt-secondary-bolder">Gateway plaza</p>
-                <p class="property__specs">
-                  <span class="txt-blue">Retail</span>
-                  <span class="txt-gray">&#x2022; 2000 sq ft</span>
-                </p>
-                <div class="location">
-                  <img class="location-icon" src="./assets/images/location.svg" alt="location-icon">
-                  <p class="txt-secondary">1582 Wellborn
-                    Rd
-                    Lithonia - 30058, GA</p>
-                </div>
-                <p class="price txt-secondary-bolder">$10,000</p>
-                <div class="rule"></div>
-                <p class="posted">
-                  <span class="gray">Posted by</span>
-                  <span class="bold-underline">John wick</span>
-                  <img class="inline-check" src="./assets/images/check-img.svg" alt="check-logo">
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-card property">
-            <div class="flex">
-              <img class="card-img1" src="./assets/images/card-img3.png" alt="property-image">
-              <div class="property__detail">
-                <p class="place txt-secondary-bolder">Rose avenue</p>
-                <p class="property__specs">
-                  <span class="txt-blue">Mixed use</span>
-                  <span class="txt-gray">&#x2022; 1060 sq ft</span>
-                </p>
-                <div class="location">
-                  <img class="location-icon" src="./assets/images/location.svg" alt="location-icon">
-                  <p class="txt-secondary">1582 Wellborn
-                    Rd
-                    Lithonia - 30058, GA</p>
-                </div>
-                <p class="price txt-secondary-bolder">$10,000</p>
-                <div class="rule"></div>
-                <p class="posted">
-                  <span class="gray">Posted by</span>
-                  <span class="bold">X Builder</span>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-card property">
-            <div class="flex">
-              <img class="card-img1" src="./assets/images/card-img4.png" alt="property-image">
-              <div class="property__detail">
-                <p class="place txt-secondary-bolder">Europe hall</p>
-                <p class="property__specs">
-                  <span class="txt-blue">Industrial</span>
-                  <span class="txt-gray">&#x2022; 19200 sq ft</span>
-                </p>
-                <div class="location">
-                  <img class="location-icon" src="./assets/images/location.svg" alt="location-icon">
-                  <p class="txt-secondary">1582 Wellborn
-                    Rd
-                    Lithonia - 30058, GA</p>
-                </div>
-                <p class="price txt-secondary-bolder">$10,000</p>
-                <div class="rule"></div>
-                <p class="posted">
-                  <span class="gray">Posted by</span>
-                  <span class="bold-underline">John wick</span>
-                  <img class="inline-check" src="./assets/images/check-img.svg" alt="check-logo">
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
       </section>
 
-      <section id="property_sell">
+      <section class="property_sell">
 
         <div class="property-description-1">
           <p class="property-sentence">ARE YOU A WHOLESALER?</p>
@@ -241,54 +252,53 @@
             Ipsum
             has been the
             industry's standard dummy text ever since the 1500s, </p>
-          <button class="property-btn primary-btn" type="button"><a href="#">Free listing</a></button>
+          <a href="#" type="button" class="property-btn primary-btn">Free listing</a>
         </div>
 
         <div class="property-description-2">
 
           <div class="property-box">
             <img class="people-img" src="./assets/images/people.png" alt="people">
+          </div>
 
-            <div class="property-grid">
+          <div class="property-grid">
 
-              <div class="property-info-card">
-                <img class="box-icon" src="./assets/images/box-img-1.png" alt="icon">
-                <h3 class="box-heading">List your property</h3>
-                <p class="txt-secondary">
-                  It’s free and easy to list your property. Simply input the property address, description and sell
-                  price and competitive buyers will start making offers.
-                </p>
-              </div>
+            <div class="property-info-card">
+              <img class="box-icon" src="./assets/images/box-img-1.png" alt="icon">
+              <h3 class="box-heading">List your property</h3>
+              <p class="txt-secondary">
+                It’s free and easy to list your property. Simply input the property address, description and sell
+                price and competitive buyers will start making offers.
+              </p>
+            </div>
 
-              <div class="property-info-card">
-                <img class="box-icon" src="./assets/images/box-img-2.png" alt="icon">
-                <h3 class="box-heading">Receive offers</h3>
-                <p class="txt-secondary">
-                  Choose to accept, decline or counter an offer to purchase. We've mapped out the entire process for you
-                  to safely sell your property with no experience needed. No property is too much or too little. Our
-                  solution can get it done!
-                </p>
-              </div>
+            <div class="property-info-card">
+              <img class="box-icon" src="./assets/images/box-img-2.png" alt="icon">
+              <h3 class="box-heading">Receive offers</h3>
+              <p class="txt-secondary">
+                Choose to accept, decline or counter an offer to purchase. We've mapped out the entire process for you
+                to safely sell your property with no experience needed. No property is too much or too little. Our
+                solution can get it done!
+              </p>
+            </div>
 
-              <div class="property-info-card">
-                <img class="box-icon" src="./assets/images/box-img-3.png" alt="icon">
-                <h3 class="box-heading">Contract safely</h3>
-                <p class="txt-secondary">
-                  Only contract with qualified buyers who have proven their ability to purchase either with cash or
-                  finance. You only pay once the property is sold or when you need our value added services to increase
-                  the marketability of your property.
-                </p>
-              </div>
+            <div class="property-info-card">
+              <img class="box-icon" src="./assets/images/box-img-3.png" alt="icon">
+              <h3 class="box-heading">Contract safely</h3>
+              <p class="txt-secondary">
+                Only contract with qualified buyers who have proven their ability to purchase either with cash or
+                finance. You only pay once the property is sold or when you need our value added services to increase
+                the marketability of your property.
+              </p>
+            </div>
 
-              <div class="property-info-card">
-                <img class="box-icon" src="./assets/images/box-img-4.png" alt="icon">
-                <h3 class="box-heading">We’re here to support you</h3>
-                <p class="txt-secondary">
-                  Our real estate experts can help you determine the right buyer for your property. We can even manage
-                  the process for you. We will oversea the entire process from beginning to end.
-                </p>
-              </div>
-
+            <div class="property-info-card">
+              <img class="box-icon" src="./assets/images/box-img-4.png" alt="icon">
+              <h3 class="box-heading">We’re here to support you</h3>
+              <p class="txt-secondary">
+                Our real estate experts can help you determine the right buyer for your property. We can even manage
+                the process for you. We will oversea the entire process from beginning to end.
+              </p>
             </div>
 
           </div>
@@ -309,7 +319,7 @@
 
       </section>
 
-      <section id="dashboard">
+      <section class="dashboard">
 
         <h1 class="heading-light lh-130 w-60 m-auto mb-8">Automate your business with powerful dashboard</h1>
         <p class="dashboard-paragraph txt-white">Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -319,7 +329,7 @@
 
       </section>
 
-      <section id="buyers">
+      <section class="buyers">
 
         <div class="about-buyers">
           <h1 class="about-heading heading-secondary lh-130 mb-8">What about buyers?</h1>
@@ -379,7 +389,7 @@
 
       </section>
 
-      <section id="packages">
+      <section class="packages">
 
         <div class="packages-container">
 
@@ -449,7 +459,7 @@
                     </p>
                   </div>
                 </div>
-                <button type="button" class="choose-btn primary-btn"><a href="#">Choose</a></button>
+                <a href="#" type="button" class="choose-btn primary-btn">Choose</a>
               </div>
 
               <div class="package-card">
@@ -498,7 +508,7 @@
                     </p>
                   </div>
                 </div>
-                <button type="button" class="choose-btn primary-btn"><a href="#">Choose</a></button>
+                <a href="#" type="button" class="choose-btn primary-btn">Choose</a>
               </div>
 
               <div class="package-card-dark">
@@ -559,7 +569,7 @@
                     </p>
                   </div>
                 </div>
-                <button type="button" class="choose-btn primary-btn"><a href="#">Try 1 month</a></button>
+                <a href="#" type="button" class="choose-btn primary-btn">Try 1 month</a>
               </div>
 
               <div class="package-card">
@@ -608,7 +618,7 @@
                     </p>
                   </div>
                 </div>
-                <button type="button" class="choose-btn primary-btn"><a href="#">Choose</a></button>
+                <a href="#" type="button" class="choose-btn primary-btn">Choose</a>
               </div>
 
             </div>
@@ -619,7 +629,7 @@
 
       </section>
 
-      <section id="services">
+      <section class="services">
 
         <p class="service-sentence">VALUE ADDED SERVICES</p>
         <h3 class="heading-secondary lh-130 mb-8">35+ Services offered</h3>
@@ -746,7 +756,7 @@
 
       </section>
 
-      <section id="about-purchasing">
+      <section class="about-purchasing">
 
         <div class="about-purchasing-container">
 
@@ -755,8 +765,9 @@
             <h1 class="content-heading heading-light lh-130 mb-8">Do you already have a property you are thinking about
               purchasing?</h1>
             <p class="container-sentence">
-              <a class="link-color txt-primary" href="#">Submit property to fetch more data and make informed
-                decisions</a><i class="fa fa-solid fa-arrow-right"></i>
+              <a class="link-color primary-link txt-primary" href="#">Submit property to fetch more data and make
+                informed
+                decisions</a> <i class="fa fa-solid fa-arrow-right"></i>
             </p>
             <p class="container-paragraph txt-white">Relotz allows you to access property data even if its not listed in
               marketplace. by submitting</p>
@@ -805,44 +816,56 @@
 
             <div class="accordion-container">
               <div class="label txt-secondary-bolder">WHAT ARE THE REQUIREMENTS FOR FINANCING?</div>
-              <div class="content txt-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
-                amet atque
-                quaerat tempore modi eaque laboriosam ipsum rem sint culpa incidunt, aperiam assumenda iusto ea ex
-                laudantium eligendi reiciendis soluta quas impedit vel officia quia. Libero esse illo perferendis!</div>
+              <div>
+                <p class="content txt-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
+                  amet atque
+                  quaerat tempore modi eaque laboriosam ipsum rem sint culpa incidunt, aperiam assumenda iusto ea ex
+                  laudantium eligendi reiciendis soluta quas impedit vel officia quia. Libero esse illo perferendis!</p>
+              </div>
             </div>
             <div class="accordion-container show">
               <div class="label txt-secondary-bolder">IS EARNEST MONEY REQUIRED?</div>
-              <div class="content txt-secondary">Yes. We require earnest money anytime a purchase agreement is executed
-                and before
-                scheduling a closing date. </div>
+              <div>
+                <p class="content txt-secondary">Yes. We require earnest money anytime a purchase agreement is executed
+                  and before
+                  scheduling a closing date.</p>
+              </div>
             </div>
             <div class="accordion-container">
               <div class="label txt-secondary-bolder">HOW SOON CAN I CLOSE?</div>
-              <div class="content txt-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
-                amet atque
-                quaerat tempore modi eaque laboriosam ipsum rem sint culpa incidunt, aperiam assumenda iusto ea ex
-                laudantium eligendi reiciendis soluta quas impedit vel officia quia. Libero esse illo perferendis!</div>
+              <div>
+                <p class="content txt-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
+                  amet atque
+                  quaerat tempore modi eaque laboriosam ipsum rem sint culpa incidunt, aperiam assumenda iusto ea ex
+                  laudantium eligendi reiciendis soluta quas impedit vel officia quia. Libero esse illo perferendis!</p>
+              </div>
             </div>
             <div class="accordion-container">
               <div class="label txt-secondary-bolder">HOW DOES THE PROCESS WORK WHEN ACQUIRING A PROPERTY?</div>
-              <div class="content txt-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
-                amet atque
-                quaerat tempore modi eaque laboriosam ipsum rem sint culpa incidunt, aperiam assumenda iusto ea ex
-                laudantium eligendi reiciendis soluta quas impedit vel officia quia. Libero esse illo perferendis!</div>
+              <div>
+                <p class="content txt-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
+                  amet atque
+                  quaerat tempore modi eaque laboriosam ipsum rem sint culpa incidunt, aperiam assumenda iusto ea ex
+                  laudantium eligendi reiciendis soluta quas impedit vel officia quia. Libero esse illo perferendis!</p>
+              </div>
             </div>
             <div class="accordion-container">
               <div class="label txt-secondary-bolder">HOW SOON CAN I CLOSE?</div>
-              <div class="content txt-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
-                amet atque
-                quaerat tempore modi eaque laboriosam ipsum rem sint culpa incidunt, aperiam assumenda iusto ea ex
-                laudantium eligendi reiciendis soluta quas impedit vel officia quia. Libero esse illo perferendis!</div>
+              <div>
+                <p class="content txt-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
+                  amet atque
+                  quaerat tempore modi eaque laboriosam ipsum rem sint culpa incidunt, aperiam assumenda iusto ea ex
+                  laudantium eligendi reiciendis soluta quas impedit vel officia quia. Libero esse illo perferendis!</p>
+              </div>
             </div>
             <div class="accordion-container">
               <div class="label txt-secondary-bolder">CAN I INVEST FROM OUT OF STATE?</div>
-              <div class="content txt-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
-                amet atque
-                quaerat tempore modi eaque laboriosam ipsum rem sint culpa incidunt, aperiam assumenda iusto ea ex
-                laudantium eligendi reiciendis soluta quas impedit vel officia quia. Libero esse illo perferendis!</div>
+              <div>
+                <p class="content txt-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque enim
+                  amet atque
+                  quaerat tempore modi eaque laboriosam ipsum rem sint culpa incidunt, aperiam assumenda iusto ea ex
+                  laudantium eligendi reiciendis soluta quas impedit vel officia quia. Libero esse illo perferendis!</p>
+              </div>
             </div>
           </div>
 
@@ -872,7 +895,7 @@
 
     <footer class="footer">
 
-      <img src="./assets/images/RELOTZ.png" alt="brand logo" class="brand-logo">
+      <a href="#"><img src="assets/images/brand-logo.png" alt="brand logo" class="brand-logo"></a>
       <div class="underline"></div>
 
 
@@ -886,33 +909,34 @@
 
         <div class="work-with">
           <p class="bold txt-white">Who we work with</p>
-          <p class="light">Investor</p>
-          <p class="light">Lender</p>
-          <p class="light">Land Owner</p>
-          <p class="light">Builder</p>
-          <p class="light mb-0">Developer</p>
+          <p class="light"> <a href="#">Investor</a></p>
+          <p class="light"> <a href="#">Lender</a></p>
+          <p class="light"> <a href="#">Land Owner</a></p>
+          <p class="light"> <a href="#">Builder</a></p>
+          <p class="light mb-0"> <a href="#">Developer</a></p>
         </div>
 
         <div class="other">
           <p class="bold txt-white">Other</p>
-          <p class="light">Privacy</p>
-          <p class="light">Policy</p>
-          <p class="light">Glossary</p>
-          <p class="light">FAQ</p>
+          <p class="light"><a href="#">Privacy</a></p>
+          <p class="light"><a href="#">Policy</a></p>
+          <p class="light"><a href="#">Glossary</a></p>
+          <p class="light"><a href="#">FAQ</a></p>
         </div>
 
         <div class="contact-details">
           <p class="bold txt-white">Contact details</p>
           <div class="address flex">
             <img src="./assets/images/location-tag.svg" alt="location icon">
-            <p class="light">7421 Douglas Blvd Unit N #418
-              Douglasville, GA 30135
+            <p class="light"><a target="_blank" href="https://goo.gl/maps/ShzuBYheVdD27rYM6">7421 Douglas Blvd Unit N
+                #418
+                Douglasville, GA 30135</a>
             </p>
           </div>
           <div class="address flex">
             <img src="./assets/images/phone-tag.svg" alt="phone icon">
-            <p class="light">1-844-473-5689 (4RELOTZ)
-              team@relotz.com
+            <p class="light"><a href="tel:+9118444735689">1-844-473-5689</a> (4RELOTZ)
+              <a href="mailto:team@relotz.com">team@relotz.com</a>
             </p>
           </div>
         </div>

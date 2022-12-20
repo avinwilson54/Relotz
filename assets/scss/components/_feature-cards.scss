@@ -2,6 +2,7 @@
 
 .feature-card.property {
   background: #FFFFFF;
+  transition: box-shadow .4s ease;
 
   .place {
     font-size: 16px;

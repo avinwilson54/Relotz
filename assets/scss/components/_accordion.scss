@@ -17,7 +17,7 @@
       }
 
       .label::after {
-        content: url("/assets/images/dropdown-icon.svg");
+        content: url("../images/dropdown-icon.svg");
         float: right;
       }
 
@@ -45,7 +45,7 @@
     }
 
     .accordion-container.active .label::after {
-      content: url("/assets/images/dropip-icon.svg");
+      content: url("../images/dropip-icon.svg");
       transition: 0.5s ease;
     }
   }

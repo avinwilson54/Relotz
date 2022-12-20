@@ -14,11 +14,11 @@ body {
 }
 
 .background-image {
-  background-image: linear-gradient(90deg, #0B151D 0%, rgba(11, 21, 29, 0) 91.77%), url("/assets/images/landing-bg.png");
-  background-attachment: fixed;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  background-size: cover;
+  background-image: linear-gradient(90deg, #0B151D 0%, rgba(11, 21, 29, 0) 91.77%), url(../images/landing-bg.png);
+  background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
   height: 100vh;
 }
 
@@ -50,6 +50,10 @@ body {
     text-decoration: none;
     color: $white;
   }
+
+  a:hover {
+    color: $secondary-color;
+  }
 }
 
 .flag {
@@ -69,6 +73,14 @@ margin-right: 8px;
 
   a {
     text-decoration: none;
+  }
+
+  a:hover {
+    color: $secondary-color;
+
+    .fa-chevron-down {
+      color: $secondary-color;
+    }
   }
 }
 
@@ -111,7 +123,7 @@ margin-right: 8px;
   }
 }
 
-#main {
+.main {
   color: #273138;
 }
 
@@ -135,14 +147,17 @@ margin-right: 8px;
   gap: 32px;
 }
 
-#features {
-  padding: 132px 108px 136px 112px;
+.features {
+
+  .features-container {
+    padding: 132px 108px 136px 112px;
   .heading-group {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
   }
   background: #F5F5F5;
+  }
 }
 
 .cards-grid {
@@ -152,7 +167,7 @@ margin-right: 8px;
   gap: 36px;
 }
 
-#property_sell {
+.property_sell {
   background: #E8F2F3;
   padding-bottom: 136px;
 
@@ -175,31 +190,31 @@ margin-right: 8px;
   }
 
   .property-description-2 {
+    display: grid;
+    grid-template-columns: auto auto;
     
     .property-box {
       margin: 64px 112px 0;
-      position: relative;
-
-      .people-img {
-        z-index: 0;
-      }
+      // position: relative;
+    }
 
       .property-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 32px;
-        width: 63%;
-        position: absolute;
-        top: 48px;
-        left: 472px;
-        z-index: 1;
-      }
+        margin-top: calc(63px + 48px);
+        margin-left: calc(-112px - 93px);
+        width: 115%;
+        // position: absolute;
+        // top: 48px;
+        // left: 472px;
+        // z-index: 1;
     }
   }
 
   .container {
-    background: url("/assets/images/property-img.png");
+    background: url("../images/property-img.png");
     border-radius: 9px;
     background-size: cover;
     background-position: center;
@@ -222,7 +237,7 @@ margin-right: 8px;
   }
 }
 
-#dashboard {
+.dashboard {
   background: #273138;
   text-align: center;
   padding: 136px 205px;
@@ -236,7 +251,7 @@ margin-right: 8px;
   }
 }
 
-#buyers {
+.buyers {
   display: grid;
   grid-template-columns: auto auto;
   padding: 136px 112px;
@@ -258,7 +273,7 @@ margin-right: 8px;
     }
 }
 
-#packages {
+.packages {
   background: #F5F5F5;
   padding: 136px 112px 85px;
 
@@ -356,7 +371,7 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-#services {
+.services {
   padding: 136px 112px;
 
   .service-sentence {
@@ -395,7 +410,7 @@ input:checked + .slider:before {
   }
 }
 
-#about-purchasing {
+.about-purchasing {
   background-color: $secondary-color;
   padding: 136px 112px;
 
@@ -423,11 +438,22 @@ input:checked + .slider:before {
 
         .link-color {
           color: $primary-color;
+          background-color: $secondary-color;
+        }
+
+        .link-color:hover {
+          color: #077a82;
+          border-bottom: 1px solid #077a82;
         }
   
         .fa-arrow-right {
           color: $primary-color;
         }
+
+        // .fa-arrow-right:hover {
+        //   color: #077a82;
+        // }
+
       }
   
       .container-paragraph {

@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 20px;
-    border-bottom: 3px solid $primary-color;
+    // border-bottom: 3px solid $primary-color;
   }
 
   .footer-content {
@@ -30,6 +30,15 @@
       .light {
         @include font-accent(#C5D5DF);
         margin-bottom: 18px;
+
+        a {
+          text-decoration: none;
+          color: #C5D5DF;
+        }
+
+        a:hover {
+          color: #7e8990;
+        }
       }
       .mb-0 {
         margin-bottom: 0;

@@ -5,6 +5,8 @@
   background: $color1;
   border: 1px solid #E7E7E7;
   padding: 30px;
+  transition: box-shadow .4s ease;
+  border: transparent;
 
   .cost {
 
@@ -74,11 +76,6 @@
   backdrop-filter: blur(35px);
 }
 
-.package-card:hover {
+.package-card:hover, .package-card-dark:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.package-card-dark:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border: none;
 }
