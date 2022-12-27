@@ -183,11 +183,13 @@ $break-phone: 767px;
             .header-content {
                 .main-heading {
                     width: 100%;
+                    font-weight: 200;
                     line-height: 1.5;
                 }
 
                 .txt-white {
                     padding-bottom: 64px;
+                    font-weight: 200;
                     width: 80%;
                 }
             }
@@ -364,7 +366,10 @@ $break-phone: 767px;
             }
 
             .dashboard-paragraph {
-                width: 65%;
+                width: 90%;
+                font-size: 14px;
+                font-weight: 200;
+                letter-spacing: 1px;
             }
         }
     }
