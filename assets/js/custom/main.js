@@ -1,3 +1,5 @@
+const mediaQuery = window.matchMedia('(max-width: 750px)');
+
 document.getElementById("billMonth").style.opacity = "1";
 document.getElementById("billAnnual").style.opacity = "0.4";
 document.getElementById("priceSwitch").addEventListener("change", () => {
@@ -33,3 +35,23 @@ for (let i = 0; i < accordion.length; i++) {
     accordion[i].classList.toggle("active");
   });
 }
+
+window.onscroll = function () { myFunction() };
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+const toggleBtn = document.getElementsByClassName("toggle-button")[0];
+const navbarLinks = document.getElementsByClassName("navbar")[0];
+const dropdownBtn = document.getElementsByClassName("dropdown-btn")[0];
+
+toggleBtn.addEventListener("click", () => {
+  dropdownBtn.classList.toggle("active");
+  navbarLinks.classList.toggle("active");
+})

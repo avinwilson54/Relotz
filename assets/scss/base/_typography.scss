@@ -1,60 +1,79 @@
 .main-heading {
   font-weight: 400;
-  font-size: 64px;
+  // font-size: 64px;
+  // font-size: clamp(1.5rem, 4vw + 1.5rem, 4rem);
+  // font-size: clamp(2rem, 8vw + 1rem, 6.5rem);
+  font-size: $fluid-main-heading;
   color: #FFFFFF;
 }
 
 .heading-dark {
   font-weight: 400;
-  font-size: 40px;
+  // font-size: clamp(1.5rem, 4vw + 1.5rem, 4rem);
+  font-size: $fluid-heading-size;
   color: $dark;
 }
 
 .heading-light {
+  // font-size: clamp(1.5rem, 4vw + 1.5rem, 4rem);
+  font-size: $fluid-heading-size;
   font-weight: 400;
-  font-size: 40px;
+  // font-size: 40px;
   color: $white;
 }
 
 .heading-secondary {
   font-weight: 400;
-  font-size: 40px;
+  // font-size: clamp(1.5rem, 4vw + 1.5rem, 4rem);
+  font-size: $fluid-heading-size;
   color: $secondary-color;
 }
 
 .txt-white {
   font-weight: 400;
-  font-size: 14px;
+  // font-size: 14px;
+  // font-size: clamp(0.875rem, 4vw + 1rem, 1.5rem);
+  font-size: $fluid-txt-size;
   color: $white;
 }
 
 .txt-light {
   font-weight: 400;
-  font-size: 14px;
+  // font-size: 14px;
+  // font-size: clamp(0.875rem, 4vw + 1rem, 1.5rem);
+  font-size: $fluid-txt-size;
   color: #c5d5df;
 }
 
 .txt-secondary {
   font-weight: 400;
-  font-size: 16px;
+  // font-size: clamp(0.875rem, 4vw + 1rem, 1.5rem);
+  font-size: $fluid-txt-size;
+  // font-size: 16px;
   color: $secondary-color;
 }
 
 .txt-secondary-bold {
   font-weight: 600;
-  font-size: 18px;
+  // font-size: 18px;
+  // font-size: clamp(0.875rem, 4vw + 1rem, 1.5rem);
+  font-size: $fluid-txt-size;
   color: $secondary-color;
 }
 
 .txt-secondary-bolder {
   font-weight: 700;
-  font-size: 20px;
+  // font-size: 20px;
+  // font-size: clamp(0.875rem, 4vw + 1rem, 1.5rem);
+  font-size: $fluid-txt-size;
   color: $secondary-color;
 }
 
 .txt-primary {
   font-weight: 700;
-  font-size: 16px;
+  // font-size: 16px;
+  // font-size: clamp(0.875rem, 4vw + 1rem, 1.5rem);
+  font-size: $fluid-txt-size;
   color: $primary-color;
 }
 

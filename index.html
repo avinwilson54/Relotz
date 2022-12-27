@@ -47,38 +47,58 @@
 
   <body>
     <header class="header background-image box-shadow">
-      <div class="nav flex">
-        <div class="flex-column">
-          <a href="#"><img class="logo-img" src="./assets/images/RELOTZ.png" alt="brand-logo"></a>
-          <div class="underline"></div>
+
+      <div class="header-container">
+
+        <div class="nav-wrapper">
+
+          <div id="navbar" class="nav flex">
+            <a href="#" class="toggle-button">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </a>
+            <a class="brand-logo" href="#"><img class="logo-img" src="./assets/images/brand-logo.png"
+                alt="brand-logo"></a>
+            <div class="navbar-wrapper flex">
+              <div class="navbar-container flex">
+                <div class="navbar">
+                  <ul class="nav-menu flex nav-flex-gap">
+                    <li><a href="#">Free listing</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                  </ul>
+                </div>
+
+                <button type="button" class="flex dropdown-btn">
+                  <img class="flag" src="./assets/images/flag.png" alt="usa-flag"><a href="#">En<i
+                      class="fa fa-solid fa-chevron-down"></i></a>
+                </button>
+              </div>
+              <a href="#" type="button" class="login-btn primary-btn">Login</a>
+            </div>
+          </div>
+          <a href="#" type="button" class="login-btn-mq primary-btn">Login</a>
         </div>
-        <div class="navbar">
-          <ul class="nav-menu flex nav-flex-gap">
-            <li><a href="#">Free listing</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
+
+        <div class="header-content">
+          <h1 class="main-heading lh-74">Buy and Sell Real Estate <span class="txt-primary">Online</span></h1>
+          <p class="txt-white">Our platform manage the entire process from beginning to end including
+            remote closings
+          </p>
         </div>
-        <button type="button" class="flex dropdown-btn">
-          <img class="flag" src="./assets/images/flag.png" alt="usa-flag"><a href="#">En<i
-              class="fa fa-solid fa-chevron-down"></i></a>
-        </button>
-        <a href="#" type="button" class="login-btn primary-btn">Login</a>
+
       </div>
 
-      <div class="header-content">
-        <h1 class="main-heading lh-74">Buy and Sell Real Estate <span class="txt-primary">Online</span></h1>
-        <p class="txt-white">Our platform manage the entire process from beginning to end including
-          remote closings
-        </p>
-      </div>
     </header>
     <!-- header -->
 
     <main class="main">
 
       <section class="page-1">
+
         <div class="page1-context">
+
           <h2 class="heading heading-dark lh-130 txt-center">We offer the best in the market</h2>
           <div class="grid">
             <div class="box">
@@ -118,16 +138,18 @@
               </div>
             </div>
           </div>
+
         </div>
+
       </section>
 
-      <section class="features">
+      <section class="features bg-lightshade">
 
         <div class="features-container">
 
           <div class="heading-group">
-            <h2 class="heading-dark lh-56 mb-32">Featured properties</h2>
-            <a href="#" type="button" class="secondary-btn">See all</a>
+            <h2 class="feature-heading heading-dark lh-56 mb-32">Featured properties</h2>
+            <a href="#" type="button" class="seeall-btn secondary-btn">See all</a>
           </div>
 
           <div class="cards-grid">
@@ -237,6 +259,8 @@
 
           </div>
 
+          <a id="mq-btn" href="#" type="button" class="primary-btn">See all</a>
+
         </div>
 
       </section>
@@ -305,11 +329,13 @@
 
         </div>
 
+        <a href="#" type="button" class="property-btn-hide primary-btn">Free listing</a>
+
         <div class="container">
           <div class="container-info">
             <p class="txt-primary">Relotz enterprise edition</p>
             <h3 class="heading-light lh-56 w-50 mb-16">Wholesaler? Get more deals done in less time.</h3>
-            <p class="txt-white">Use our platform to sell your wholesale deals to qualified buyers.
+            <p class="info-para txt-white">Use our platform to sell your wholesale deals to qualified buyers.
               We are
               here to help your business
               achieve
@@ -321,68 +347,81 @@
 
       <section class="dashboard">
 
-        <h1 class="heading-light lh-130 w-60 m-auto mb-8">Automate your business with powerful dashboard</h1>
-        <p class="dashboard-paragraph txt-white">Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem
-          Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-        <img src="./assets/images/Dashboard-image.png" alt="dashboard" class="dashboard-img">
+        <div class="dashboard-container">
+
+          <h1 class="heading-light lh-130 w-60 m-auto mb-8">Automate your business with powerful dashboard</h1>
+          <p class="dashboard-paragraph txt-white">Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem
+            Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
+          <img src="./assets/images/Dashboard-image.png" alt="dashboard" class="dashboard-img">
+
+        </div>
+
 
       </section>
 
       <section class="buyers">
 
-        <div class="about-buyers">
-          <h1 class="about-heading heading-secondary lh-130 mb-8">What about buyers?</h1>
-          <p class="txt-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-        </div>
+        <div class="buyers-container">
 
-        <div class="grid-cards">
-
-          <div class="buyers-info-card">
-            <div class="card-icon">
-              <img src="./assets/images/buyers-icon-1.svg" alt="" class="buyers-icon">
-            </div>
-            <h3 class="txt-secondary lh-130pt">Bring your own property</h3>
-            <p class="card-paragraph txt-secondary">You can either browse our marketplace for properties to purchase or
-              bring your
-              own
-              property you are considering to purchase. Our platform gives you real solutions to manage the buying
-              and
-              selling process with ease.</p>
+          <div class="about-buyers">
+            <h1 class="about-heading heading-secondary lh-130 mb-8">What about buyers?</h1>
+            <p class="txt-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem
+              Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
           </div>
 
-          <div class="buyers-info-card">
-            <div class="card-icon">
-              <img src="./assets/images/graph-icon.svg" alt="" class="buyers-icon">
-            </div>
-            <h3 class="txt-secondary lh-130pt">Real-time analytics</h3>
-            <p class="card-paragraph txt-secondary">Input the property address to start reviewing real time data related
-              to the
-              property. Receive obligation free financing options from miltiple lenders fast within 60 seconds.</p>
-          </div>
+          <div class="grid-cards">
 
-          <div class="buyers-info-card">
-            <div class="card-icon">
-              <img src="./assets/images/graph-icon.svg" alt="" class="buyers-icon">
+            <div class="buyers-info-card">
+              <div class="card-icon">
+                <img src="./assets/images/buyers-icon-1.svg" alt="" class="buyers-icon">
+              </div>
+              <h3 class="txt-secondary lh-130pt">Bring your own property</h3>
+              <p class="card-paragraph txt-secondary">You can either browse our marketplace for properties to purchase
+                or
+                bring your
+                own
+                property you are considering to purchase. Our platform gives you real solutions to manage the buying
+                and
+                selling process with ease.</p>
             </div>
-            <h3 class="txt-secondary lh-130pt">Buying experience</h3>
-            <p class="card-paragraph txt-secondary">We have by far the most sophisticated and intelligent process to buy
-              and sell
-              real estate online with largest pool of qualified users globally.
-            </p>
-          </div>
 
-          <div class="buyers-info-card">
-            <div class="card-icon">
-              <img src="./assets/images/graph-icon.svg" alt="" class="buyers-icon">
+            <div class="buyers-info-card">
+              <div class="card-icon">
+                <img src="./assets/images/graph-icon.svg" alt="" class="buyers-icon">
+              </div>
+              <h3 class="txt-secondary lh-130pt">Real-time analytics</h3>
+              <p class="card-paragraph txt-secondary">Input the property address to start reviewing real time data
+                related
+                to the
+                property. Receive obligation free financing options from miltiple lenders fast within 60 seconds.</p>
             </div>
-            <h3 class="txt-secondary lh-130pt">Track progress</h3>
-            <p class="card-paragraph txt-secondary">Stay up-to-date and on-the-go with our deal flow tracker, and mobile
-              app
-              (coming
-              soon). Always know what deal status your property is in and time left before closing.</p>
+
+            <div class="buyers-info-card">
+              <div class="card-icon">
+                <img src="./assets/images/graph-icon.svg" alt="" class="buyers-icon">
+              </div>
+              <h3 class="txt-secondary lh-130pt">Buying experience</h3>
+              <p class="card-paragraph txt-secondary">We have by far the most sophisticated and intelligent process to
+                buy
+                and sell
+                real estate online with largest pool of qualified users globally.
+              </p>
+            </div>
+
+            <div class="buyers-info-card">
+              <div class="card-icon">
+                <img src="./assets/images/graph-icon.svg" alt="" class="buyers-icon">
+              </div>
+              <h3 class="txt-secondary lh-130pt">Track progress</h3>
+              <p class="card-paragraph txt-secondary">Stay up-to-date and on-the-go with our deal flow tracker, and
+                mobile
+                app
+                (coming
+                soon). Always know what deal status your property is in and time left before closing.</p>
+            </div>
+
           </div>
 
         </div>
@@ -631,123 +670,128 @@
 
       <section class="services">
 
-        <p class="service-sentence">VALUE ADDED SERVICES</p>
-        <h3 class="heading-secondary lh-130 mb-8">35+ Services offered</h3>
-        <div class="flex-container">
-          <p class="service-paragraph lh-130pt">We provide a suite of services that allow you to get insights about
-            properties
-          </p>
-          <div class="btn-underline">
-            <button type="button" class="primary-link"><a href="#">Request a service</a></button>
-          </div>
-        </div>
+        <div class="service-container">
 
-        <div class="flex-service-cards">
-
-          <div class="service-card">
-            <h4 class="card-heading txt-secondary-bolder">Preconstruction services</h4>
-
-            <div class="flex-taglines">
-              <div class="card-taglines">
-                <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
-                <p class="features-paragraph">
-                  Preliminary planning
-                </p>
-              </div>
-              <div class="card-taglines">
-                <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
-                <p class="features-paragraph">
-                  Project management
-                </p>
-              </div>
-              <div class="card-taglines">
-                <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
-                <p class="features-paragraph">
-                  Design Planning
-                </p>
-              </div>
-              <div class="card-taglines">
-                <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
-                <p class="features-paragraph">
-                  Estimating
-                </p>
-              </div>
-            </div>
-
+          <p class="service-sentence">VALUE ADDED SERVICES</p>
+          <h3 class="heading-secondary lh-130 mb-8">35+ Services offered</h3>
+          <div class="flex-container">
+            <p class="service-paragraph txt-secondary lh-130pt">We provide a suite of services that allow you to get
+              insights about
+              properties
+            </p>
             <div class="btn-underline">
-              <button type="button" class="primary-link"><a href="#">See all</a></button>
+              <button type="button" class="primary-link"><a href="#">Request a service</a></button>
             </div>
-
           </div>
 
-          <div class="service-card">
-            <h4 class="card-heading txt-secondary-bolder">Project challenges services</h4>
+          <div class="flex-service-cards">
 
-            <div class="flex-taglines">
-              <div class="card-taglines">
-                <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
-                <p class="features-paragraph">
-                  Site selection
-                </p>
+            <div class="service-card">
+              <h4 class="card-heading txt-secondary-bolder">Preconstruction services</h4>
+
+              <div class="flex-taglines">
+                <div class="card-taglines">
+                  <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
+                  <p class="features-paragraph">
+                    Preliminary planning
+                  </p>
+                </div>
+                <div class="card-taglines">
+                  <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
+                  <p class="features-paragraph">
+                    Project management
+                  </p>
+                </div>
+                <div class="card-taglines">
+                  <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
+                  <p class="features-paragraph">
+                    Design Planning
+                  </p>
+                </div>
+                <div class="card-taglines">
+                  <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
+                  <p class="features-paragraph">
+                    Estimating
+                  </p>
+                </div>
               </div>
-              <div class="card-taglines">
-                <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
-                <p class="features-paragraph">
-                  Project feasibility
-                </p>
+
+              <div class="btn-underline">
+                <button type="button" class="primary-link"><a href="#">See all</a></button>
               </div>
-              <div class="card-taglines">
-                <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
-                <p class="features-paragraph">
-                  Critical equipment deliveries
-                </p>
-              </div>
-              <div class="card-taglines">
-                <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
-                <p class="features-paragraph">
-                  Utilities
-                </p>
-              </div>
+
             </div>
 
-            <div class="btn-underline">
-              <button type="button" class="primary-link"><a href="#">See all</a></button>
+            <div class="service-card">
+              <h4 class="card-heading txt-secondary-bolder">Project challenges services</h4>
+
+              <div class="flex-taglines">
+                <div class="card-taglines">
+                  <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
+                  <p class="features-paragraph">
+                    Site selection
+                  </p>
+                </div>
+                <div class="card-taglines">
+                  <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
+                  <p class="features-paragraph">
+                    Project feasibility
+                  </p>
+                </div>
+                <div class="card-taglines">
+                  <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
+                  <p class="features-paragraph">
+                    Critical equipment deliveries
+                  </p>
+                </div>
+                <div class="card-taglines">
+                  <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
+                  <p class="features-paragraph">
+                    Utilities
+                  </p>
+                </div>
+              </div>
+
+              <div class="btn-underline">
+                <button type="button" class="primary-link"><a href="#">See all</a></button>
+              </div>
+
             </div>
 
-          </div>
+            <div class="service-card">
+              <h4 class="card-heading txt-secondary-bolder">Additional services</h4>
 
-          <div class="service-card">
-            <h4 class="card-heading txt-secondary-bolder">Additional services</h4>
+              <div class="flex-taglines">
+                <div class="card-taglines">
+                  <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
+                  <p class="features-paragraph">
+                    Design documents
+                  </p>
+                </div>
+                <div class="card-taglines">
+                  <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
+                  <p class="features-paragraph">
+                    Project management
+                  </p>
+                </div>
+                <div class="card-taglines">
+                  <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
+                  <p class="features-paragraph">
+                    Design Planning
+                  </p>
+                </div>
+                <div class="card-taglines">
+                  <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
+                  <p class="features-paragraph">
+                    Estimating
+                  </p>
+                </div>
+              </div>
 
-            <div class="flex-taglines">
-              <div class="card-taglines">
-                <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
-                <p class="features-paragraph">
-                  Design documents
-                </p>
+              <div class="btn-underline">
+                <button type="button" class="primary-link"><a href="#">See all</a></button>
               </div>
-              <div class="card-taglines">
-                <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
-                <p class="features-paragraph">
-                  Project management
-                </p>
-              </div>
-              <div class="card-taglines">
-                <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
-                <p class="features-paragraph">
-                  Design Planning
-                </p>
-              </div>
-              <div class="card-taglines">
-                <div class="pri-circle"><img src="./assets/images/check-img.svg" alt="check"></div>
-                <p class="features-paragraph">
-                  Estimating
-                </p>
-              </div>
-            </div>
 
-            <div class="btn-underline">
-              <button type="button" class="primary-link"><a href="#">See all</a></button>
             </div>
 
           </div>
@@ -767,7 +811,7 @@
             <p class="container-sentence">
               <a class="link-color primary-link txt-primary" href="#">Submit property to fetch more data and make
                 informed
-                decisions</a> <i class="fa fa-solid fa-arrow-right"></i>
+                decisions <i class="fa fa-solid fa-arrow-right"></i></a>
             </p>
             <p class="container-paragraph txt-white">Relotz allows you to access property data even if its not listed in
               marketplace. by submitting</p>
@@ -881,7 +925,7 @@
 
         <div class="section-content">
           <div class="vendor txt-primary">Relotz Lenders.</div>
-          <h2 class="heading-light lh-56 w-50">500 million dollars on demand</h2>
+          <h2 class="demand-heading heading-light lh-56 w-50">500 million dollars on demand</h2>
           <p class="section-paragraph txt-white">Why search for lenders when you can simply input property details to
             start
             receiving finance options from our integrated lenders?</p>
@@ -895,56 +939,61 @@
 
     <footer class="footer">
 
-      <a href="#"><img src="assets/images/brand-logo.png" alt="brand logo" class="brand-logo"></a>
-      <div class="underline"></div>
+      <div class="footer-container">
 
+        <a href="#"><img src="assets/images/brand-logo.png" alt="brand logo" class="brand-logo"></a>
+        <div class="underline"></div>
 
-      <div class="footer-content">
+        <div class="footer-content">
 
-        <p class="footer-paragraph">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
-        </p>
+          <p class="footer-paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat.
+          </p>
 
-        <div class="work-with">
-          <p class="bold txt-white">Who we work with</p>
-          <p class="light"> <a href="#">Investor</a></p>
-          <p class="light"> <a href="#">Lender</a></p>
-          <p class="light"> <a href="#">Land Owner</a></p>
-          <p class="light"> <a href="#">Builder</a></p>
-          <p class="light mb-0"> <a href="#">Developer</a></p>
-        </div>
-
-        <div class="other">
-          <p class="bold txt-white">Other</p>
-          <p class="light"><a href="#">Privacy</a></p>
-          <p class="light"><a href="#">Policy</a></p>
-          <p class="light"><a href="#">Glossary</a></p>
-          <p class="light"><a href="#">FAQ</a></p>
-        </div>
-
-        <div class="contact-details">
-          <p class="bold txt-white">Contact details</p>
-          <div class="address flex">
-            <img src="./assets/images/location-tag.svg" alt="location icon">
-            <p class="light"><a target="_blank" href="https://goo.gl/maps/ShzuBYheVdD27rYM6">7421 Douglas Blvd Unit N
-                #418
-                Douglasville, GA 30135</a>
-            </p>
+          <div class="work-with">
+            <p class="bold txt-white">Who we work with</p>
+            <p class="light"> <a href="#">Investor</a></p>
+            <p class="light"> <a href="#">Lender</a></p>
+            <p class="light"> <a href="#">Land Owner</a></p>
+            <p class="light"> <a href="#">Builder</a></p>
+            <p class="light mb-0"> <a href="#">Developer</a></p>
           </div>
-          <div class="address flex">
-            <img src="./assets/images/phone-tag.svg" alt="phone icon">
-            <p class="light"><a href="tel:+9118444735689">1-844-473-5689</a> (4RELOTZ)
-              <a href="mailto:team@relotz.com">team@relotz.com</a>
-            </p>
+
+          <div class="other">
+            <p class="bold txt-white">Other</p>
+            <p class="light"><a href="#">Privacy</a></p>
+            <p class="light"><a href="#">Policy</a></p>
+            <p class="light"><a href="#">Glossary</a></p>
+            <p class="light"><a href="#">FAQ</a></p>
+          </div>
+
+          <div class="contact-details">
+            <p class="bold txt-white">Contact details</p>
+            <div class="address flex">
+              <img src="./assets/images/location-tag.svg" alt="location icon">
+              <p class="light"><a target="_blank" href="https://goo.gl/maps/ShzuBYheVdD27rYM6">7421 Douglas Blvd Unit N
+                  #418
+                  Douglasville, GA 30135</a>
+              </p>
+            </div>
+            <div class="address flex">
+              <img src="./assets/images/phone-tag.svg" alt="phone icon">
+              <p class="light"><a href="tel:+9118444735689">1-844-473-5689</a> (4RELOTZ)
+                <a href="mailto:team@relotz.com">team@relotz.com</a>
+              </p>
+            </div>
           </div>
         </div>
+
+        <hr class="footer-hr">
+
+        <div class="copy-right">&copy; 2022 FNLT All Rights Reserved. Privacy Policy | Terms of Use</div>
+
       </div>
-
-      <hr class="footer-hr">
-
-      <div class="copy-right">&copy; 2022 FNLT All Rights Reserved. Privacy Policy | Terms of Use</div>
 
     </footer>
     <!-- footer -->

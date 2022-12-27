@@ -2,6 +2,11 @@
 $base-font-family: 'Poppins', sans-serif;
 $reset-rem-size: 62.5%;
 $font-size-base: 1.6rem;
+$fluid-main-heading: clamp(2rem, 8vw + 1rem, 6.5rem);
+$fluid-heading-size: clamp(1.5rem, 4vw + 1.5rem, 4rem);
+$fluid-txt-size: clamp(0.875rem, 4vw + 1rem, 1.5rem);
+$fluid-txt-size-md: clamp(0.875rem, 4vw + 1rem, 1.8rem);
+$fluid-txt-size-sm: clamp(0.875rem, 4vw + 1rem, 1rem);
 
 // image path
 $image-path: '../images';

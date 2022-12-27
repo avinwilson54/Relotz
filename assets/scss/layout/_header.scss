@@ -1,0 +1,134 @@
+.header {
+  background-image: linear-gradient(90deg, #0B151D 0%, rgba(11, 21, 29, 0) 91.77%), url(../images/landing-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+
+  .header-container {
+    max-width: 1216px;
+    margin-inline: auto;
+    padding-top: 44px;
+  
+    .nav-wrapper {
+
+      .nav {
+
+        .toggle-button {
+          position: absolute;
+          display: none;
+          flex-direction: column;
+          justify-content: space-between;
+          width: 30px;
+          height: 21px;
+
+          .bar {
+            height: 3px;
+            width: 100%;
+            background-color: $white;
+            border-radius: 10px;
+          }
+        }
+
+        a.brand-logo {
+          margin-right: auto;
+        }
+
+        .navbar-wrapper {
+          gap: 64px;
+
+          .navbar-container {
+            gap: 59px;
+      
+            .navbar {
+
+              .nav-menu li {
+                list-style-type: none;
+              
+                a {
+                  text-decoration: none;
+                  color: $white;
+                }
+              
+                a:hover {
+                  color: $secondary-color;
+                }
+              }
+      
+              .nav-flex-gap {
+                gap: 40px;
+              }
+            }
+
+            .dropdown-btn {
+                color: $white;
+                background: none;
+                border: none;
+
+              .flag {
+                width: 26px;
+                height: 18px;
+                margin-right: 8px;
+                }
+
+                a {
+                  .fa-chevron-down {
+                    margin-left: 4px;
+                    display: inline-flex;
+                    align-items: flex-end;
+                  }
+                }
+              
+                a {
+                  text-decoration: none;
+                }
+              
+                a:hover {
+                  color: $secondary-color;
+              
+                  .fa-chevron-down {
+                    color: $secondary-color;
+                  }
+                }
+            }
+          }
+        }
+      }
+      .login-btn-mq {
+        display: none;
+      }
+    }
+
+    
+    .header-content {
+      width: 80%;
+      margin-top: 171px;
+
+      .main-heading {
+        line-height: 74px;
+        .txt-primary {
+          color: $primary-color;
+          font-size: clamp(2rem, 8vw + 1rem, 6.5rem);
+          font-weight: 400;
+        }
+      }
+    
+      .txt-white {
+        font-size: clamp(0.875rem, 1.5vw + 1rem, 1.8rem);
+        width: 50%;
+        line-height: 28px;
+        margin-top: 24px;
+      }
+    }
+  }
+  @include headerMixin;
+}
+
+// .sticky {
+//   position: fixed;
+//   top: 0%;
+//   max-width: 1216px;
+//   // width: 90%;
+//   margin: 0 auto;
+// }

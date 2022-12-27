@@ -46,14 +46,14 @@
 
 @mixin font-accent($color) {
 	font-weight: 400;
-		font-size: 14px;
+		font-size: $fluid-txt-size;
 		line-height: 13px;
 		color: $color;
 }
 
 @mixin font-style($color, $weight) {
 	font-weight: $weight;
-	font-size: 10px;
+	font-size: $fluid-txt-size;
 	line-height: 10px;
 	color: $color;
 }
